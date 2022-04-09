@@ -1,12 +1,14 @@
 https://youtu.be/ULK-bejEP4k
 
+/assets/images/
+
 I am not an electronics, programming or espHome expert. I have been searching and getting inspiration from videos. What I am is a big fan of Home Assistant with a multitude of home automation devices, even addicted :).
 
 I do a RC FPV Car with espHome in a nodemcuv2 8266 board.
  
 Pros:
-  - go around the house 
-  - gossip and annoy my dog
+  - Go around the house 
+  - Gossip and annoy my dog
 
 Cons:
  - Lot of lag camera and buttons
@@ -53,8 +55,8 @@ To do or wishlist:
 - Add Esp32cam because the Lag, connected to the same battery
 - Add 1 or 3 more front lights, maybe also 4 backlights using omnios and transistors
 - Fix the way the sensor battery know the correct pins or correct code
--  Put a battery docker station "like a robot vacuum"
--  Charge the usb camera with the same battery if it can with everything 
+- Put a battery docker station "like a robot vacuum"
+- Charge the usb camera with the same battery if it can with everything 
 
 
 #esphome #rccar #rccars #rc #homeassistant #L298N #ttmotors #esp8266 #esp32cam #fpv #fpvcar #fpvwifi #wificar #rcwifi #car #cars #wirelessrccar #radiocontrol #esphomerobot #robotcar #robotcar #esphomecar #esphomeproject #esphomeservo #esphomepantilt
