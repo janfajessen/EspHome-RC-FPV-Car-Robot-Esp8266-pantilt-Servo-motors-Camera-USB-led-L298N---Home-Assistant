@@ -23,7 +23,8 @@ Cons:
  - Very Fast Car
  - Many car crashes
 
-![](rc_car_v_0_1_picture_1.jpg)
+<p align="center">
+  <img src="https://github.com/janfajessen/EspHome-RC-FPV-Car-Robot-ve0.1-Esp8266-pantilt-Servo-motors-Camera-USB-led-L298N---Home-Assistant/blob/main/rc_car_v_0_1_picture_1.jpg" width="300" />
 
 
 (I've tried it later with an esp32cam but I can't get it to work, I'll put it aside later in the same battery).
@@ -41,7 +42,8 @@ QUESTIONS:
 You can answer here:
 https://community.home-assistant.io/t/esphome-rc-fpv-car-robot-esp8266-pantilt-servo-motors-camera-usb-led-l298n/410117?u=janinho
 
-![](rc_car_v_0_1_picture_2.jpg)
+<p align="center">
+  <img src="https://github.com/janfajessen/EspHome-RC-FPV-Car-Robot-ve0.1-Esp8266-pantilt-Servo-motors-Camera-USB-led-L298N---Home-Assistant/blob/main/rc_car_v_0_1_picture_2.jpg" width="300" />
 
 INSPIRATION:
 
@@ -88,8 +90,12 @@ https://a.aliexpress.com/_vkivtW
 
 DIAGRAM INSPIRATION: (Not exactly mine)
 
-![](Screenshot_20220407-025208.png)
-![](Screenshot_20220404-093039.png)
+<p align="center">
+  <img src="https://github.com/janfajessen/EspHome-RC-FPV-Car-Robot-ve0.1-Esp8266-pantilt-Servo-motors-Camera-USB-led-L298N---Home-Assistant/blob/main/Screenshot_20220407-025208.png" width="300" />
+
+<p align="center">
+  <img src="https://github.com/janfajessen/EspHome-RC-FPV-Car-Robot-ve0.1-Esp8266-pantilt-Servo-motors-Camera-USB-led-L298N---Home-Assistant/blob/main/Screenshot_20220404-093039.png" width="300" />
+
 
 FILE CONFIGURATION:
 
@@ -115,7 +121,8 @@ FILE CONFIGURATION:
      - Create a Camera auto Card
  - Thats It! Have a good time!
 
-![](Screenshot_20220409-140959.png)
+<p align="center">
+  <img src="https://github.com/janfajessen/EspHome-RC-FPV-Car-Robot-ve0.1-Esp8266-pantilt-Servo-motors-Camera-USB-led-L298N---Home-Assistant/blob/main/Screenshot_20220409-140959.png" width="150" />
 
 
 TO DO OR WISHLIST:
