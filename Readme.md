@@ -34,6 +34,7 @@ INSPIRATION:
 
 https://youtu.be/tyY7AN132Xs
 https://youtu.be/aJeD7R48ZyI
+https://github.com/ishakmuhamad/rc-car-homeassistant
 
 MATERIALS:
 
@@ -74,17 +75,28 @@ https://a.aliexpress.com/_vkivtW
 INSTALLATION:
 
  - I'm not going to say here how to install an esp8266 in Home Assistant, there are many tutorials on YT. 
- - Once the installation is done, copy and paste the RC-Car.yaml file, validate it and upload it. 
+ - Once the installation is done, copy and paste the RC-Car.yaml file, change your said and WiFi password validate it and upload it. 
  - Then several entities should appears at Home Assistant:
      - switch.input1
      - switch.input2
      - switch.input3
      - switch.input4
      - light.led_cam
+     - service: esphome.rc_car_control_servo_x
+     - service: esphome.rc_car_control_servo_y 
+ - You have to create two input numbers in helpers from min -100 and max 100 with slider, must be this names:
      - input_number.servo_x
-     - input_number.servo_y  
- - Also copy and paste the content of scripts.yaml into your scripts.yaml file.  
+     - input_number.servo_y
+ - Once created this input_numbers them copy and paste the content of automations.yaml in your automation.yaml
+ - Also copy and paste the content of scripts.yaml into your scripts.yaml file
+ - In your Home Assistant Lovelace or Dashboard:
+     - Create a Camera Live Card 
+     - Create a Grid with all buttons (example if you want to paste in code)
+     - Create a Camera auto Card
  - Thats It! Have a good time!
+
+![](Screenshot_20220409-140959.png)
+
 
 TO DO OR WISHLIST:
 
@@ -95,7 +107,7 @@ TO DO OR WISHLIST:
 - Add a battery docker station "like a robot vacuum"
 - Charge the usb camera with the same battery if it can with everything 
 
-![](Screenshot_20220409-140959.png)
+
 
 #esphome #rccar #rccars #rc #homeassistant #L298N #ttmotors #esp8266 #esp32cam #fpv #fpvcar #fpvwifi #wificar #rcwifi #car #cars #wirelessrccar #radiocontrol #esphomerobot #robotcar #robotcar #esphomecar #esphomeproject #esphomeservo #esphomepantilt
 
