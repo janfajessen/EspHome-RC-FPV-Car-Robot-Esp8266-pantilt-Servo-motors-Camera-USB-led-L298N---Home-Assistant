@@ -6,7 +6,8 @@
   <img src="https://github.com/janfajessen/EspHome-RC-FPV-Car-Robot-ve0.1-Esp8266-pantilt-Servo-motors-Camera-USB-led-L298N---Home-Assistant/blob/main/ha_logo.png" width="100" height="100" />
 
 [![IMAGE ALT TEXT HERE](Screenshot_20220409-140909.png)](https://youtu.be/ULK-bejEP4k) 
-https://youtu.be/ULK-bejEP4k
+<p align="center">
+  https://youtu.be/ULK-bejEP4k
 
 
 I am not an electronics, programming or espHome expert. I have been searching, getting inspiration from videos and looking for information until I put the pieces together. What I am is a big fan of Home Assistant with a multitude of home automation devices, even addicted :).
