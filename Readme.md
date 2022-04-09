@@ -2,8 +2,6 @@
 [![IMAGE ALT TEXT HERE](Screenshot_20220409-140909.png)](https://youtu.be/ULK-bejEP4k) 
 https://youtu.be/ULK-bejEP4k
 
-![](rc_car_v_0_1_picture_1.jpg)
-![](rc_car_v_0_1_picture_2.jpg)
 
 I am not an electronics, programming or espHome expert. I have been searching and getting inspiration from videos. What I am is a big fan of Home Assistant with a multitude of home automation devices, even addicted :).
 
@@ -18,6 +16,8 @@ Cons:
  - Very Fast Car
  - Many car crashes
 
+![](rc_car_v_0_1_picture_1.jpg)
+
 (I've tried it later with an esp32cam but I can't get it to work, I'll put it aside later in the same battery).
 
  EVERYTHING IS QUITE PROVISIONAL, NO IMAGE DIAGRAM and has not been assembled just for testing, VERSION 0.1
@@ -27,6 +27,8 @@ QUESTIONS:
 
  - Can someone tell me how to control the speed?
  - How to know the battery status?
+
+![](rc_car_v_0_1_picture_2.jpg)
 
 INSPIRATION:
 
@@ -78,6 +80,7 @@ TO DO OR WISHLIST:
 - Add a battery docker station "like a robot vacuum"
 - Charge the usb camera with the same battery if it can with everything 
 
+![](Screenshot_20220409-140959.png)
 
 #esphome #rccar #rccars #rc #homeassistant #L298N #ttmotors #esp8266 #esp32cam #fpv #fpvcar #fpvwifi #wificar #rcwifi #car #cars #wirelessrccar #radiocontrol #esphomerobot #robotcar #robotcar #esphomecar #esphomeproject #esphomeservo #esphomepantilt
 
