@@ -1,6 +1,7 @@
 https://youtu.be/ULK-bejEP4k
 
-/assets/images/
+/main/rc_car_v_0_1_picture_1.jpg
+/main/images/rc_car_v_0_1_picture_2.jpg
 
 I am not an electronics, programming or espHome expert. I have been searching and getting inspiration from videos. What I am is a big fan of Home Assistant with a multitude of home automation devices, even addicted :).
 
