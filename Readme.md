@@ -118,6 +118,7 @@ TO DO OR WISHLIST:
 - Add a 3d printed battery docker station "like a robot vacuum"
 - Charge the usb camera with the same battery if it can with everything 
 
+![](ha_logo.png) ![](esphome_logo_logo.png)
 
 
 #esphome #rccar #rccars #rc #homeassistant #L298N #ttmotors #esp8266 #esp32cam #fpv #fpvcar #fpvwifi #wificar #rcwifi #car #cars #wirelessrccar #radiocontrol #esphomerobot #robotcar #robotcar #esphomecar #esphomeproject #esphomeservo #esphomepantilt
