@@ -20,14 +20,15 @@ Cons:
 
 (I've tried it later with an esp32cam but I can't get it to work, I'll put it aside later in the same battery).
 
- EVERYTHING IS QUITE PROVISIONAL, NO IMAGE DIAGRAM and has not been assembled just for testing, VERSION 0.1
+ EVERYTHING IS QUITE PROVISIONAL, I DON'T HAVE IMAGE DIAGRAM YET and has not been assembled yet, this video is just for testing, VERSION 0.1.
   Now it's difficult to control away from home, the camera and the button presses have a lot of lag and instead the car goes very fast. Maybe is my internet connection. 
 
 QUESTIONS:
 
- - Can someone tell me how to control the speed?
+ - Can someone tell me how to control the speed?  I know that it is possible with Arduino but with the EspHome code I have not found it, something similar but not understand it at all.  There are 2 switches of 4 controlling several at the same time, I don't know how to do it.
  - How to know the battery status?
-
+ - How to connect 2 or more led lights to same pin with transistors and ohms?
+ - How to control led lights brightness without binary
 ![](rc_car_v_0_1_picture_2.jpg)
 
 INSPIRATION:
@@ -39,7 +40,7 @@ https://github.com/ishakmuhamad/rc-car-homeassistant
 MATERIALS:
 
  - Esp8266
- - 12V Battery that it works when it's charging
+ - 12V Battery, the car works when it's charging so it's possible to do a battery docker station later. 12V 6800mah 18650 6.8Ah Li-ion Rechargeable Battery With BMS Lithium Battery Packs Protection Board 
  -  12.6V Charger
 https://a.aliexpress.com/_vECinm
 - Arduino Car Kit with 4 TT motors and wheels
@@ -57,7 +58,7 @@ https://a.aliexpress.com/_v7d13E
 - Dupont Cable
  https://a.aliexpress.com/_vOOCXW
  - Portable Battery for the usb camera
- - rtsp USB Camera (Xiaomi Xiaofang in my case)
+ - rtsp USB Camera (Xiaomi Xiaofang in my case) because I want a better image quality and night vision
 
 OPTIONAL: 
 
@@ -100,11 +101,11 @@ FILE CONFIGURATION:
 
 TO DO OR WISHLIST:
 
-- Know the correct code to Control speed in L298
-- Add Esp32cam because the Lag, connected to the same battery
+- Know the correct code to Control speed in L298N
+- Add or use only a Esp32cam because the Lag, connected to the same battery or just the esp32 cam like a unique board but without other optionals led lights
 - Add 1 or 3 more front lights, maybe also 4 backlights using ohms and transistors
 - Fix the way the sensor battery know the correct pins or correct code
-- Add a battery docker station "like a robot vacuum"
+- Add a 3d printed battery docker station "like a robot vacuum"
 - Charge the usb camera with the same battery if it can with everything 
 
 
