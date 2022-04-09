@@ -1,0 +1,25 @@
+- id: servo_motor_x_write_value_to_esp:
+  alias: Servo Motor x write value to esp 
+  description: "when a number in the slide then move the servo"
+  trigger:
+  - platform: state
+     entity_id: input_number.servo_motor_x
+  condition: []
+  action:
+  - service: esphome.rc_car_control_servo_x 
+    data_template:
+      level: {{ trigger.to_state.state | int }}'
+  mode: single
+- id: servo_motor_y_write_value_to_esp:
+  alias: Servo Motor y write value to esp 
+  description: "when a number in the slide then move the servo"
+  trigger:
+  - platform: state
+     entity_id: input_number.servo_motor_y
+  condition: []
+  action:
+  - service: esphome.rc_car_control_servo_y 
+    data_template:
+      level: {{ trigger.to_state.state | int }}'
+  mode: single
+
