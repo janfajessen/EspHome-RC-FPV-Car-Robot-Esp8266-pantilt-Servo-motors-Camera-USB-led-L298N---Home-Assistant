@@ -1,7 +1,7 @@
 https://youtu.be/ULK-bejEP4k
 
-/main/rc_car_v_0_1_picture_1.jpg
-/main/images/rc_car_v_0_1_picture_2.jpg
+/assets/images/rc_car_v_0_1_picture_1.jpg
+/assets/images/rc_car_v_0_1_picture_2.jpg
 
 I am not an electronics, programming or espHome expert. I have been searching and getting inspiration from videos. What I am is a big fan of Home Assistant with a multitude of home automation devices, even addicted :).
 
@@ -26,10 +26,12 @@ Can someone tell me how to control the speed?
 How to know the battery status?
 
 INSPIRATION:
+
 https://youtu.be/tyY7AN132Xs
 https://youtu.be/aJeD7R48ZyI
 
 MATERIALS:
+
  - Esp8266
  - 12V Battery that it works when it's charging
  -  12.6V Charger
@@ -50,7 +52,8 @@ https://a.aliexpress.com/_v7d13E
  https://a.aliexpress.com/_vOOCXW
  - Portable Battery for the usb camera
  - rtsp USB Camera (Xiamo Xiaofang in my case)
-Optional: 
+
+OPTIONAL: 
  - Buck Converter for regulate power
  https://a.aliexpress.com/_vMJBkM
   - Soldering PCB boards
@@ -62,7 +65,7 @@ https://a.aliexpress.com/_vkivtW
   - Esp32cam
   - 3d printed case for battery docker station
 
-To do or wishlist:
+TO DO OR WISHLIST:
 - Know the correct code to Control speed in L298
 - Add Esp32cam because the Lag, connected to the same battery
 - Add 1 or 3 more front lights, maybe also 4 backlights using ohms and transistors
