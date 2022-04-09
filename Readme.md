@@ -30,6 +30,10 @@ QUESTIONS:
  - How to know the battery status?
  - How to connect 2 or more led lights to same pin with transistors and ohms?
  - How to control led lights brightness without binary
+
+Can you answer here:
+https://community.home-assistant.io/t/esphome-rc-fpv-car-robot-esp8266-pantilt-servo-motors-camera-usb-led-l298n/410117?u=janinho
+
 ![](rc_car_v_0_1_picture_2.jpg)
 
 INSPIRATION:
