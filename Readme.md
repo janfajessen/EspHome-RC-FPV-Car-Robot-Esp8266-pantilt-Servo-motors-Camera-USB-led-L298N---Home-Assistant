@@ -1,12 +1,16 @@
 https://youtu.be/ULK-bejEP4k
 
+/assets/images/
+
 I am not an electronics, programming or espHome expert. I have been searching and getting inspiration from videos. What I am is a big fan of Home Assistant with a multitude of home automation devices, even addicted :).
 
 I do a RC FPV Car with espHome in a nodemcuv2 8266 board.
- Pros:
-  - go around the house 
-  - gossip and annoy my dog
- Cons:
+ 
+Pros:
+  - Go around the house 
+  - Gossip and annoy my dog
+
+Cons:
  - Lot of lag camera and buttons
  - Very Fast
  - Many car crashes
@@ -46,175 +50,14 @@ https://a.aliexpress.com/_v7d13E
  - Portable Battery for the usb camera
  - rtsp USB Camera (Xiamo Xiaofang in my case)
 
-SCRIPTS.YAML:
-
-rc_car_forward:
-  alias: RC Car forward
-  sequence:
-  - service: switch.turn_off
-    data:
-      entity_id: switch.input1
-  - service: switch.turn_off
-    data:
-      entity_id: switch.input3
-  - delay:
-      milliseconds: 500
-  - service: switch.turn_on
-    data:
-      entity_id: switch.input2
-  - service: switch.turn_on
-    data:
-      entity_id: switch.input4
-rc_car_backward:
-  alias: RC Car backward
-  sequence:
-  - service: switch.turn_off
-    data:
-      entity_id: switch.input2
-  - service: switch.turn_off
-    data:
-      entity_id: switch.input4
-  - delay:
-      milliseconds: 500
-  - service: switch.turn_on
-    data:
-      entity_id: switch.input1
-  - service: switch.turn_on
-    data:
-      entity_id: switch.input3
-rc_car_right_rotation:
-  alias: RC Car right rotation
-  sequence:
-  - service: switch.turn_off
-    data:
-      entity_id: switch.input1
-  - service: switch.turn_off
-    data:
-      entity_id: switch.input4
-  - delay:
-      milliseconds: 500
-  - service: switch.turn_on
-    data:
-      entity_id: switch.input3
-  - service: switch.turn_on
-    data:
-      entity_id: switch.input2
-  mode: single
-rc_car_left_rotation:
-  alias: RC Car left rotation
-  sequence:
-  - service: switch.turn_off
-    data:
-      entity_id: switch.input3
-  - service: switch.turn_off
-    data:
-      entity_id: switch.input2
-  - delay:
-      milliseconds: 500
-  - service: switch.turn_on
-    data: 
-      entity_id: switch.input1
-  - service: switch.turn_on
-    data:
-      entity_id: switch.input4
-  mode: single
-rc_car_stop:
-  alias: RC Car stop
-  sequence:
-  - service: switch.turn_off
-    data:
-      entity_id: switch.input1
-  - service: switch.turn_off
-    data:
-      entity_id: switch.input2
-  - service: switch.turn_off
-    data:
-      entity_id: switch.input3
-  - service: switch.turn_off
-    data:
-      entity_id: switch.input4
-
-RC-CAR.YAML:
-
-esphome:
-  name: rc-car
-
-esp8266:
-  board: nodemcuv2
-
-logger:
-
-ota:
-  password: "xxx"
-
-wifi:
-  ssid: YOUR_WIFI_NAME
-  password: YOUR_PASS
-
-  ap:
-    ssid: "Rc-Car Fallback Hotspot"
-    password: "YOUR_PASS"
-    
-captive_portal:
-
-switch:
-  - platform: gpio
-    pin: GPIO15
-    name: "input1"
-    id: input1
-  - platform: gpio
-    pin: GPIO14
-    name: "input2"
-    id: input2
-  - platform: gpio
-    pin: GPIO12
-    name: "input3"
-    id: input3
-  - platform: gpio
-    pin: GPIO13
-    name: "input4"
-    id: input4
-
-servo:
-  - id: servo_x
-    output: pwm_output
-  - id: servo_y
-    output: pwm_output2
-    
-api:
-  services:
-    - service: control_servo_x
-      variables:
-        level: float
-      then:
-        - servo.write:
-            id: servo_x
-            level: !lambda 'return level / 100.0;'
-    - service: control_servo_y
-      variables:
-        level: float
-      then:
-        - servo.write:
-            id: servo_y
-            level: !lambda 'return level / 100.0;'
-
-light:
-  - platform: binary
-    name: "Leds camera"
-    output: leds_cam
-
-output:
-  - id: leds_cam
-    platform: gpio
-    pin: GPIO2
-  - platform: esp8266_pwm
-    id: pwm_output
-    pin: GPIO5
-    frequency: 50 Hz
-  - platform: esp8266_pwm
-    id: pwm_output2
-    pin: GPIO4
-    frequency: 50 Hz
+To do or wishlist:
+- Know the correct code to Control speed in L298
+- Add Esp32cam because the Lag, connected to the same battery
+- Add 1 or 3 more front lights, maybe also 4 backlights using omnios and transistors
+- Fix the way the sensor battery know the correct pins or correct code
+- Put a battery docker station "like a robot vacuum"
+- Charge the usb camera with the same battery if it can with everything 
 
 
 #esphome #rccar #rccars #rc #homeassistant #L298N #ttmotors #esp8266 #esp32cam #fpv #fpvcar #fpvwifi #wificar #rcwifi #car #cars #wirelessrccar #radiocontrol #esphomerobot #robotcar #robotcar #esphomecar #esphomeproject #esphomeservo #esphomepantilt
+
