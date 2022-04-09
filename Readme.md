@@ -3,7 +3,7 @@
 https://youtu.be/ULK-bejEP4k
 
 
-I am not an electronics, programming or espHome expert. I have been searching and getting inspiration from videos, I have almost no knowledge of electronics or programming, nor am I an expert in espHome.  I have been searching, getting inspiration from videos and looking for information until I put the pieces together. What I am is a big fan of Home Assistant with a multitude of home automation devices, even addicted :).
+I am not an electronics, programming or espHome expert. I have been searching, getting inspiration from videos and looking for information until I put the pieces together. What I am is a big fan of Home Assistant with a multitude of home automation devices, even addicted :).
 
 I do a RC FPV Car with espHome in a nodemcuv2 8266 board.
  
