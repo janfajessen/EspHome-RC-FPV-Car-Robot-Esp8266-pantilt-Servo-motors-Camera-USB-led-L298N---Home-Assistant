@@ -1,4 +1,5 @@
-#esphome #rccar #rccars #rc #homeassistant #L298N #ttmotors #esp8266 #esp32cam #fpv #fpvcar #fpvwifi #wificar #rcwifi #car #cars #wirelessrccar #radiocontrol #esphomerobot #robotcar #robotcar #esphomecar #esphomeproject #esphomeservo #esphomepantilt
+https://youtu.be/ULK-bejEP4k
+
 I am not an electronics, programming or espHome expert. I have been searching and getting inspiration from videos. What I am is a big fan of Home Assistant with a multitude of home automation devices, even addicted :).
 
 I do a RC FPV Car with espHome in a nodemcuv2 8266 board.
@@ -214,3 +215,6 @@ output:
     id: pwm_output2
     pin: GPIO4
     frequency: 50 Hz
+
+
+#esphome #rccar #rccars #rc #homeassistant #L298N #ttmotors #esp8266 #esp32cam #fpv #fpvcar #fpvwifi #wificar #rcwifi #car #cars #wirelessrccar #radiocontrol #esphomerobot #robotcar #robotcar #esphomecar #esphomeproject #esphomeservo #esphomepantilt
