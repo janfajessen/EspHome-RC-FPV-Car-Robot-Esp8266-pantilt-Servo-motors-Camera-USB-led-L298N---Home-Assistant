@@ -71,6 +71,21 @@ https://a.aliexpress.com/_vkivtW
   - Esp32cam
   - 3d printed case for battery docker station
 
+INSTALLATION:
+
+ - I'm not going to say here how to install an esp8266 in Home Assistant, there are many tutorials on YT. 
+ - Once the installation is done, copy and paste the RC-Car.yaml file, validate it and upload it. 
+ - Then several entities should appears at Home Assistant:
+     - switch.input1
+     - switch.input2
+     - switch.input3
+     - switch.input4
+     - light.led_cam
+     - input_number.servo_x
+     - input_number.servo_y  
+ - Also copy and paste the content of scripts.yaml into your scripts.yaml file.  
+ - Thats It! Have a good time!
+
 TO DO OR WISHLIST:
 
 - Know the correct code to Control speed in L298
