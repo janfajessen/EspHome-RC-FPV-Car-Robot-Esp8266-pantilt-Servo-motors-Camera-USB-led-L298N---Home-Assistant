@@ -21,9 +21,10 @@ Cons:
  EVERYTHING IS QUITE PROVISIONAL, NO IMAGE DIAGRAM and has not been assembled just for testing, VERSION 0.1
   Now it's difficult to control away from home, the camera and the button presses have a lot of lag and instead the car goes very fast. Maybe is my internet connection. 
 
-Questions:
-Can someone tell me how to control the speed?
-How to know the battery status?
+QUESTIONS:
+
+ - Can someone tell me how to control the speed?
+ - How to know the battery status?
 
 INSPIRATION:
 
