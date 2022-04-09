@@ -49,11 +49,22 @@ https://a.aliexpress.com/_v7d13E
  https://a.aliexpress.com/_vOOCXW
  - Portable Battery for the usb camera
  - rtsp USB Camera (Xiamo Xiaofang in my case)
+Optional: 
+ - Buck Converter for regulate power
+ https://a.aliexpress.com/_vMJBkM
+  - Soldering PCB boards
+https://a.aliexpress.com/_vnVAiM
+  - Led lights
+https://a.aliexpress.com/_vkivtW
+  - Transistors
+  - Ohms
+  - Esp32cam
+  - 3d printed case for battery docker station
 
 To do or wishlist:
 - Know the correct code to Control speed in L298
 - Add Esp32cam because the Lag, connected to the same battery
-- Add 1 or 3 more front lights, maybe also 4 backlights using omnios and transistors
+- Add 1 or 3 more front lights, maybe also 4 backlights using ohms and transistors
 - Fix the way the sensor battery know the correct pins or correct code
 - Put a battery docker station "like a robot vacuum"
 - Charge the usb camera with the same battery if it can with everything 
