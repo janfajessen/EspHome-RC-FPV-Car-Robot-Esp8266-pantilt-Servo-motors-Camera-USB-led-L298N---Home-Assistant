@@ -72,7 +72,7 @@ https://a.aliexpress.com/_vkivtW
   - Esp32cam
   - 3d printed case for battery docker station
 
-INSTALLATION:
+FILE CONFIGURATION:
 
  - I'm not going to say here how to install an esp8266 in Home Assistant, there are many tutorials on YT. 
  - Once the installation is done, copy and paste the RC-Car.yaml file, change your said and WiFi password validate it and upload it. 
@@ -91,7 +91,7 @@ INSTALLATION:
  - Also copy and paste the content of scripts.yaml into your scripts.yaml file
  - In your Home Assistant Lovelace or Dashboard:
      - Create a Camera Live Card 
-     - Create a Grid with all buttons (example if you want to paste in code)
+     - Create a Grid card with all buttons (example if you want to paste in code)
      - Create a Camera auto Card
  - Thats It! Have a good time!
 
