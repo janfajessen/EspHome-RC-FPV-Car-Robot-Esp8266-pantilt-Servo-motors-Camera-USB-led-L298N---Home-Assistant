@@ -3,7 +3,7 @@
 https://youtu.be/ULK-bejEP4k
 
 
-I am not an electronics, programming or espHome expert. I have been searching and getting inspiration from videos. What I am is a big fan of Home Assistant with a multitude of home automation devices, even addicted :).
+I am not an electronics, programming or espHome expert. I have been searching and getting inspiration from videos, I have almost no knowledge of electronics or programming, nor am I an expert in espHome.  I have been searching, getting inspiration from videos and looking for information until I put the pieces together. What I am is a big fan of Home Assistant with a multitude of home automation devices, even addicted :).
 
 I do a RC FPV Car with espHome in a nodemcuv2 8266 board.
  
@@ -17,6 +17,7 @@ Cons:
  - Many car crashes
 
 ![](rc_car_v_0_1_picture_1.jpg)
+
 
 (I've tried it later with an esp32cam but I can't get it to work, I'll put it aside later in the same battery).
 
@@ -73,10 +74,15 @@ https://a.aliexpress.com/_vkivtW
   - Esp32cam
   - 3d printed case for battery docker station
 
+DIAGRAM INSPIRATION: (Not exactly mine)
+
+![](Screenshot_20220407-025208.png)
+![](Screenshot_20220404-093039.png)
+
 FILE CONFIGURATION:
 
  - I'm not going to say here how to install an esp8266 in Home Assistant, there are many tutorials on YT. 
- - Once the installation is done, copy and paste the RC-Car.yaml file, change your said and WiFi password validate it and upload it. 
+ - Once the installation is done, copy and paste the RC-Car.yaml file, change your ssid and WiFi password validate it and upload it. 
  - Then several entities should appears at Home Assistant:
      - switch.input1
      - switch.input2
