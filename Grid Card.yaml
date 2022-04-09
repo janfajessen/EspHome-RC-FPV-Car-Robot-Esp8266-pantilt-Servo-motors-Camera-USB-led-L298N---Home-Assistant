@@ -1,0 +1,68 @@
+square: false
+columns: 3
+type: grid
+cards:
+  - show_name: false
+    show_icon: true
+    type: button
+    tap_action:
+      action: toggle
+    entity: light.leds_camara
+    icon: mdi:led-on
+    show_state: false
+  - show_name: false
+    show_icon: true
+    type: button
+    tap_action:
+      action: toggle
+    entity: script.rc_car_forward
+    icon: mdi:arrow-up-drop-circle
+  - show_name: false
+    show_icon: true
+    type: button
+    tap_action:
+      action: toggle
+    entity: script.rc_car_stop
+    icon: mdi:stop
+  - show_name: false
+    show_icon: true
+    type: button
+    tap_action:
+      action: toggle
+    entity: script.rc_car_left
+    icon: mdi:arrow-left-drop-circle
+  - show_name: false
+    show_icon: true
+    type: button
+    tap_action:
+      action: toggle
+    entity: script.rc_car_stop
+    icon: mdi:stop
+  - show_name: false
+    show_icon: true
+    type: button
+    tap_action:
+      action: toggle
+    entity: script.rc_car_right
+    icon: mdi:arrow-right-drop-circle
+  - show_name: false
+    show_icon: true
+    type: button
+    tap_action:
+      action: toggle
+    entity: script.rc_car_left
+    icon: mdi:rotate-left
+  - show_name: false
+    show_icon: true
+    type: button
+    tap_action:
+      action: toggle
+    entity: script.rc_car_backward
+    icon: mdi:arrow-down-drop-circle
+  - show_name: false
+    show_icon: true
+    type: button
+    tap_action:
+      action: toggle
+    entity: script.rc_car_right
+    icon: mdi:rotate-right
