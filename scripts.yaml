@@ -1,0 +1,122 @@
+rc_car_forward:
+  alias: RC Car forward
+  sequence:
+  - service: switch.turn_off
+    data:
+      entity_id: switch.input1
+  - service: switch.turn_off
+    data:
+      entity_id: switch.input3
+  - delay:
+      milliseconds: 500
+  - service: switch.turn_on
+    data:
+      entity_id: switch.input2
+  - service: switch.turn_on
+    data:
+      entity_id: switch.input4
+rc_car_backward:
+  alias: RC Car backward
+  sequence:
+  - service: switch.turn_off
+    data:
+      entity_id: switch.input2
+  - service: switch.turn_off
+    data:
+      entity_id: switch.input4
+  - delay:
+      milliseconds: 500
+  - service: switch.turn_on
+    data:
+      entity_id: switch.input1
+  - service: switch.turn_on
+    data:
+      entity_id: switch.input3
+rc_car_right_rotation:
+  alias: RC Car right rotation
+  sequence:
+  - service: switch.turn_off
+    data:
+      entity_id: switch.input1
+  - service: switch.turn_off
+    data:
+      entity_id: switch.input4
+  - delay:
+      milliseconds: 500
+  - service: switch.turn_on
+    data: 
+      entity_id: switch.input3
+  - service: switch.turn_on
+    data:
+      entity_id: switch.input2
+  mode: single
+rc_car_right_turn:
+  alias: RC Car right turn
+  sequence:
+  - service: switch.turn_off
+    data:
+      entity_id: switch.input1
+  - service: switch.turn_off
+    data:
+      entity_id: switch.input3
+  - service: switch.turn_off
+    data:
+      entity_id: switch.input4
+  - delay:
+      milliseconds: 500
+  - service: switch.turn_on
+    data:
+      entity_id: switch.input2
+  mode: single
+rc_car_left_rotation:
+  alias: RC Car left rotation
+  sequence:
+  - service: switch.turn_off
+    data:
+      entity_id: switch.input3
+  - service: switch.turn_off
+    data:
+      entity_id: switch.input2
+  - delay:
+      milliseconds: 500
+  - service: switch.turn_on
+    data: 
+      entity_id: switch.input1
+  - service: switch.turn_on
+    data:
+      entity_id: switch.input4
+  mode: single
+rc_car_left_turn:
+  alias: RC Car left turn
+  sequence:
+  - service: switch.turn_off
+    data:
+      entity_id: switch.input1
+  - service: switch.turn_off
+    data: {}
+    target:
+      entity_id: switch.input3
+  - service: switch.turn_off
+    data:
+      entity_id: switch.input2
+  - delay:
+      milliseconds: 500
+  - service: switch.turn_on
+    data:
+      entity_id: switch.input4
+  mode: single
+rc_car_stop:
+  alias: RC Car stop
+  sequence:
+  - service: switch.turn_off
+    data:
+      entity_id: switch.input1
+  - service: switch.turn_off
+    data:
+      entity_id: switch.input2
+  - service: switch.turn_off
+    data:
+      entity_id: switch.input3
+  - service: switch.turn_off
+    data:
+      entity_id: switch.input4
