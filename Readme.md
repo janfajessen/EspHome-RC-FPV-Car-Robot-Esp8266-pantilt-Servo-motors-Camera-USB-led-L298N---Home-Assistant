@@ -1,4 +1,10 @@
 
+<p align="center">
+  <img src="https://github.com/janfajessen/EspHome-RC-FPV-Car-Robot-ve0.1-Esp8266-pantilt-Servo-motors-Camera-USB-led-L298N---Home-Assistant/blob/main/esphome_logo_logo.png" width="200" />
+
+<p align="center">
+  <img src="https://github.com/janfajessen/EspHome-RC-FPV-Car-Robot-ve0.1-Esp8266-pantilt-Servo-motors-Camera-USB-led-L298N---Home-Assistant/blob/main/ha_logo.png" width="100" height="100" />
+
 [![IMAGE ALT TEXT HERE](Screenshot_20220409-140909.png)](https://youtu.be/ULK-bejEP4k) 
 https://youtu.be/ULK-bejEP4k
 
@@ -31,7 +37,7 @@ QUESTIONS:
  - How to connect 2 or more led lights to same pin with transistors and ohms?
  - How to control led lights brightness without binary
 
-Can you answer here:
+You can answer here:
 https://community.home-assistant.io/t/esphome-rc-fpv-car-robot-esp8266-pantilt-servo-motors-camera-usb-led-l298n/410117?u=janinho
 
 ![](rc_car_v_0_1_picture_2.jpg)
@@ -51,14 +57,15 @@ https://a.aliexpress.com/_vECinm
 - Arduino Car Kit with 4 TT motors and wheels
 https://a.aliexpress.com/_ugpMKk
 - 2 servo motors  SG90 360
+
 Or
 - 2 servo motors MG996 360
 https://a.aliexpress.com/_vYO1g4
-- Servo PT Pan/Tilt and 2 servo motors
-https://a.aliexpress.com/_vaiPQg
+- Servo PT Pan/Tilt for 2 servo motors sg90
+https://a.aliexpress.com/_vaiPQg 
+
 Or
-- this 
--  MG996 Pan/Tilt and 2 servo motors MG996 
+-  MG996 Pan/Tilt for 2 servo motors MG996 
 https://a.aliexpress.com/_v7d13E
 - Dupont Cable
  https://a.aliexpress.com/_vOOCXW
@@ -119,8 +126,8 @@ TO DO OR WISHLIST:
 - Add a 3d printed battery docker station "like a robot vacuum"
 - Charge the usb camera with the same battery if it can with everything 
 
-![](esphome_logo_logo.png)
-![](ha_logo.png)
+
+
 
 
 #esphome #rccar #rccars #rc #homeassistant #L298N #ttmotors #esp8266 #esp32cam #fpv #fpvcar #fpvwifi #wificar #rcwifi #car #cars #wirelessrccar #radiocontrol #esphomerobot #robotcar #robotcar #esphomecar #esphomeproject #esphomeservo #esphomepantilt
