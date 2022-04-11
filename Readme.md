@@ -13,15 +13,6 @@
 I am not an electronics, programming or espHome expert. I have been searching, getting inspiration from videos and looking for information until I put the pieces together. What I am is a big fan of Home Assistant with a multitude of home automation devices, even addicted :).
 
 I'm working on a RC FPV Car with espHome in a nodemcuv2 8266 board.
- 
-Pros:
- - Surveillance Camera go around the house 
- - Gossip and annoy my dog
-
-Cons:
- - Lot of lag camera and buttons
- - Very Fast Car
- - Many car crashes
 
 <p align="center">
   <img src="https://github.com/janfajessen/EspHome-RC-FPV-Car-Robot-ve0.1-Esp8266-pantilt-Servo-motors-Camera-USB-led-L298N---Home-Assistant/blob/main/rc_car_v_0_1_picture_1.jpg" width="350" />
@@ -31,14 +22,12 @@ Cons:
 
  EVERYTHING IS QUITE PROVISIONAL, I DON'T HAVE IMAGE DIAGRAM YET and has not been assembled yet, this video is just for testing, VERSION 0.1.
 
-  Now it's difficult to control away from home, the camera and the button presses have a lot of lag and instead the car goes very fast. Maybe is my internet connection. 
+  I control away from home, the camera have a lot of lag, must to have patience outside home, but I can control speed as I want with a light pwm component.
 
 QUESTIONS:
 
- - Can someone tell me how to control the speed?  I know that it is possible with Arduino but with the EspHome code I have not found it, something similar but not understand it at all.  There are 2 switches of 4 controlling several at the same time, I don't know how to do it.
  - How to know the battery status?
  - How to connect 2 or more led lights to same pin with transistors and ohms?
- - How to control led lights brightness without binary
 
 You can answer here:
 https://community.home-assistant.io/t/esphome-rc-fpv-car-robot-esp8266-pantilt-servo-motors-camera-usb-led-l298n/410117?u=janinho
@@ -107,17 +96,19 @@ FILE CONFIGURATION:
      - switch.input2
      - switch.input3
      - switch.input4
+     - light.car_speed
      - light.led_cam
      - service: esphome.rc_car_control_servo_x
      - service: esphome.rc_car_control_servo_y 
- - You have to create two input numbers in helpers from min -100 and max 100 with slider, must be this names:
+ - You have to create two input numbers in helpers from min -100 and max 100 with slider, like this names:
      - input_number.servo_x
      - input_number.servo_y
- - Once created this input_numbers them copy and paste the content of automations.yaml in your automation.yaml
- - Also copy and paste the content of scripts.yaml into your scripts.yaml file
+ - Once created this input_numbers them copy and paste the content of automations.yaml in your automation.yaml or take it as an example and create it in the UI settings
+ - Also copy and paste the content of scripts.yaml into your scripts.yaml file or take it as an example and create it in the UI settings
  - In your Home Assistant Lovelace or Dashboard:
      - Create a Camera Live Card 
      - Create a Grid card with all buttons (example if you want to paste in code)
+     - Create a Speed Controller using light.speed_control entity with slider 
      - Create a entities card with input_number.servo_x and input_number.servo_y
      - Create a Camera auto Card
  - Thats It! Have a good time!
@@ -128,7 +119,6 @@ FILE CONFIGURATION:
 
 TO DO OR WISHLIST:
 
-- Know the correct code to Control speed in L298N
 - Add or use only a Esp32cam because the Lag, connected to the same battery or just the esp32 cam like a unique board but without other optionals led lights
 - Add 1 or 3 more front lights, maybe also 4 backlights using ohms and transistors
 - Fix the way the sensor battery know the correct pins or correct code
