@@ -1,6 +1,12 @@
 # EspHome RC Car Camera Robot FPV
 ## Version 1.0
 
+ - Control a Camera wherever you want in your House with this RC Car Camera. 
+ - You can control away from home like everything in HA.
+ - In my case the camera have a lot of lag, must to have patience to move where you want.
+ - Can control car speed!!
+ - Battery docker station. Can use it also when is charging
+
 <p align="center">
   <img src="https://github.com/janfajessen/EspHome-RC-FPV-Car-Robot-ve0.1-Esp8266-pantilt-Servo-motors-Camera-USB-led-L298N---Home-Assistant/blob/main/esphome_logo_logo.png" width="200" />
 
@@ -12,13 +18,6 @@
 
 <p align="center">
   https://youtu.be/ULK-bejEP4k
-
- - Control a Camera wherever you want in your House with this RC Car Camera. 
- - You can control away from home like everything in HA.
- - In my case the camera have a lot of lag, must to have patience to move where you want.
- - Can control car speed!!
- - Battery docker station. Can use it also when is charging
-
 
 I am not an electronics, programming or espHome expert. I have been searching, getting inspiration from videos and looking for information until I put the pieces together. What I am is a big fan of Home Assistant with a multitude of home automation devices, even addicted :).
 
