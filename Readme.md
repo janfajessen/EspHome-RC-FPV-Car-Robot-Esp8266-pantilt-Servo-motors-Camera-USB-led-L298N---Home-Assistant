@@ -50,22 +50,23 @@ https://github.com/ishakmuhamad/rc-car-homeassistant
 MATERIALS:
 
  - Esp8266
- - 12V Battery, the car works when it's charging so it's possible to do a battery docker station later. 12V 6800mah 18650 6.8Ah Li-ion Rechargeable Battery With BMS Lithium Battery Packs Protection Board 
+ - 12V Battery, the esp8266 works when it's charging so it's possible to move the camera. 12V 6800mah 18650 6.8Ah Li-ion Rechargeable Battery With BMS Lithium Battery Packs Protection Board 
  -  12.6V Charger
 https://a.aliexpress.com/_vECinm
 - Arduino Car Kit with 4 TT motors and wheels
 https://a.aliexpress.com/_ugpMKk
-- 2 servo motors  SG90 360
-
-Or
-- 2 servo motors MG996 360
-https://a.aliexpress.com/_vYO1g4
-- Servo PT Pan/Tilt for 2 servo motors sg90
+- Servo Pan Tilt it depends on the weight of the camera:
+- Servo PT Pan/Tilt for 2 servo motors sg90, in my case sometimes it doesn't have enough strength to move a Xiaofang Camera
 https://a.aliexpress.com/_vaiPQg 
 
 Or
 -  MG996 Pan/Tilt for 2 servo motors MG996 
 https://a.aliexpress.com/_v7d13E
+- 2 servo motors  SG90 360
+
+Or
+- 2 servo motors MG996 360
+https://a.aliexpress.com/_vYO1g4
 - Dupont Cable
  https://a.aliexpress.com/_vOOCXW
  - Portable Battery for the usb camera
