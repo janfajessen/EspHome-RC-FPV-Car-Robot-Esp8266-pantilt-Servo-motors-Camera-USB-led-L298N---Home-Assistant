@@ -25,7 +25,7 @@ I'm working on a RC FPV Car with espHome in a nodemcuv2 8266 board.
 
  EVERYTHING IS QUITE PROVISIONAL, I DON'T HAVE IMAGE DIAGRAM YET and has not been assembled yet, when I have all the pieces I will soldering and update this page 
 
-  I control away from home, the camera have a lot of lag, must to have patience outside home, but I can control speed as I want with a light pwm component.
+  I control away from home, the camera have a lot of lag, must to have patience, but I can control speed as I want with a light pwm component.
 
 QUESTIONS:
 
