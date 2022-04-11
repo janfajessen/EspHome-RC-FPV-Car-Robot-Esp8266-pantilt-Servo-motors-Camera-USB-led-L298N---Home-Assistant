@@ -7,7 +7,7 @@
 
 [![](https://github.com/janfajessen/EspHome-RC-FPV-Car-Robot-ve0.1-Esp8266-pantilt-Servo-motors-Camera-USB-led-L298N---Home-Assistant/blob/main/Screenshot_20220409-140909.png)](https://youtu.be/ULK-bejEP4k)
 
-EspHome RC FPV Car Robot Version 1.0
+<title> EspHome RC FPV Car Robot Version 1.0 </title>
 
 <p align="center">
   https://youtu.be/ULK-bejEP4k
@@ -22,7 +22,7 @@ I'm working on a RC FPV Car with espHome in a nodemcuv2 8266 board.
 
 (I've tried it later with an esp32cam but I can't get it to work, I'll put it aside later in the same battery).
 
- EVERYTHING IS QUITE PROVISIONAL, I DON'T HAVE IMAGE DIAGRAM YET and has not been assembled yet, this video is just for testing, VERSION 0.1.
+ EVERYTHING IS QUITE PROVISIONAL, I DON'T HAVE IMAGE DIAGRAM YET and has not been assembled yet, when I have all the pieces I will soldering and update this page 
 
   I control away from home, the camera have a lot of lag, must to have patience outside home, but I can control speed as I want with a light pwm component.
 
