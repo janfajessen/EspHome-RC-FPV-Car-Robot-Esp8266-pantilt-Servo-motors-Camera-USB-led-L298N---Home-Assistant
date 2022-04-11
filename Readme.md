@@ -5,7 +5,7 @@
  - You can control away from home like everything in HA.
  - In my case the camera have a lot of lag, must to have patience to move where you want.
  - Can control car speed!!
- - Battery docker station. Can use it also when is charging
+ - Battery docker station. Can use the camera position also when is charging
 
 <p align="center">
   <img src="https://github.com/janfajessen/EspHome-RC-FPV-Car-Robot-ve0.1-Esp8266-pantilt-Servo-motors-Camera-USB-led-L298N---Home-Assistant/blob/main/esphome_logo_logo.png" width="200" />
