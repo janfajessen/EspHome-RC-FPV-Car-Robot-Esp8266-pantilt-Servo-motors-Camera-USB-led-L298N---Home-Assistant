@@ -7,6 +7,8 @@
 
 [![](https://github.com/janfajessen/EspHome-RC-FPV-Car-Robot-ve0.1-Esp8266-pantilt-Servo-motors-Camera-USB-led-L298N---Home-Assistant/blob/main/Screenshot_20220409-140909.png)](https://youtu.be/ULK-bejEP4k)
 
+EspHome RC FPV Car Robot Version 1.0
+
 <p align="center">
   https://youtu.be/ULK-bejEP4k
 
