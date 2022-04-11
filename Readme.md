@@ -56,7 +56,7 @@ https://a.aliexpress.com/_vECinm
 - Arduino Car Kit with 4 TT motors and wheels
 https://a.aliexpress.com/_ugpMKk
 - Servo Pan Tilt it depends on the weight of the camera:
-- Servo PT Pan/Tilt for 2 servo motors sg90, in my case sometimes it doesn't have enough strength to move a Xiaofang Camera
+- Servo PT Pan/Tilt for 2 servo motors sg90, in my case sometimes it doesn't have enough strength to move up a Xiaofang Camera
 https://a.aliexpress.com/_vaiPQg 
 
 Or
