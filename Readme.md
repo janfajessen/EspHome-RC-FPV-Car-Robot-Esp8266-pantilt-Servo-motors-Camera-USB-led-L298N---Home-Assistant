@@ -81,9 +81,11 @@ https://a.aliexpress.com/_vkivtW
 
 FILE CONFIGURATION OR INSTALLATION:
 
- - Plug your esp8266 in your computer or Raspberry Pi. Select new device in EspHome, click continue, write a file name like RC-Car, in Select your device type pick specific board and choose nodemcu.
+ - Plug your esp8266 in your computer or Raspberry Pi. In EspHome select + new device, click continue, write a file name like RC-Car, in select your device type pick specific board and choose nodemcu.
  - Click skip. Copy and paste in edit button the content of RC-Car.yaml file in your file, change your ssid and WiFi password validate it and install it. 
  - Choose Plug into the computer running ESPHome Dashboard and wait the installation.
+ - Look at the log and copy the IP address in case it does not appear automatically in Home Assistant. 
+ - In Home Assistant, Go to Configuration, Devices and services, if it's not your new ESPHome device: add integration, search for ESPHome and write the IP address in the host.
  - Then several entities should appears at Home Assistant:
      - switch.input1
      - switch.input2
@@ -109,6 +111,8 @@ FILE CONFIGURATION OR INSTALLATION:
  - Plug your ESP32cam in your computer or Raspberry Pi. Select new device in EspHome, click continue, write a file name like RC-Car-32cam, in Select your device type choose ESP32.
  - Click skip. Copy and paste in edit button the content of RC-Car-32cam.yaml file in your file, change your ssid and WiFi password validate it and install it.
  - Choose Plug into the computer running ESPHome Dashboard and wait the installation.
+ - Look at the log and copy the IP address in case it does not appear automatically in Home Assistant. 
+ - In Home Assistant, Go to Configuration, Devices and services, if it's not your new ESPHome device: add integration, search for ESPHome and write this IP address in the host.
  - Then other several entities should appears at Home Assistant:
      - camera.rc_car32_cam 
      - light.led_rc_car32cam
