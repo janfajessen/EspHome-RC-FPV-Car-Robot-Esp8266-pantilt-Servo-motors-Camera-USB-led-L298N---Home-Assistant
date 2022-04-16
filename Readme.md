@@ -100,7 +100,12 @@ FILE CONFIGURATION OR INSTALLATION:
  - Also copy and paste the content of scripts.yaml into your scripts.yaml file or take it as an example and create it in the UI settings
 
  - For ESP32Cam installation I have to use a FT232RL TTL to plug in Raspberry Pi. 
- - Connections: VCC from TTL to 5.5v in ESP32,  GND from TTL to GND in ESP32, RX from TTL to U0T in ESP32, TX from TTL to U0T in ESP32, In ESP32 connect a bridge from IO0 to GND.
+ - Connections: VCC from TTL to 5.5v in ESP32,  GND from TTL to GND in ESP32, RX from TTL to GPIO1 in ESP32, TX from TTL to GPIO3 in ESP32, In ESP32 connect a bridge from GPIO0 to GND.
+
+<p align="center">
+  <img src="https://github.com/janfajessen/EspHome-RC-FPV-Car-Robot-ve0.1-Esp8266-pantilt-Servo-motors-Camera-USB-led-L298N---Home-Assistant/blob/main/esp32cam_wiring_connection_for_installation.png" width="150" />
+
+
  - Plug your ESP32cam in your computer or Raspberry Pi. Select new device in EspHome, click continue, write a file name like RC-Car-32cam, in Select your device type choose ESP32.
  - Click skip. Copy and paste in edit button the content of RC-Car-32cam.yaml file in your file, change your ssid and WiFi password validate it and install it.
  - Choose Plug into the computer running ESPHome Dashboard and wait the installation.
@@ -114,6 +119,9 @@ FILE CONFIGURATION OR INSTALLATION:
      - sensor.uptime_sensor
  - Remove all the wires and connect the ESP32Cam like diagram using only 2 wires, VIN and GND. 
  - If you want to modify your ESP32Cam file the bridge must be plugged in.
+
+<p align="center">
+  <img src="https://github.com/janfajessen/EspHome-RC-FPV-Car-Robot-ve0.1-Esp8266-pantilt-Servo-motors-Camera-USB-led-L298N---Home-Assistant/blob/main/Screenshot_20220411-093548.png" width="250" />
 
  - In your Home Assistant Lovelace or Dashboard:
      - Create a Camera Live Card with your ESP32Cam and also the other one.
@@ -129,12 +137,7 @@ DIAGRAM CONNECTION:
 <p align="center">
   <img src="https://github.com/janfajessen/EspHome-RC-FPV-Car-Robot-ve0.1-Esp8266-pantilt-Servo-motors-Camera-USB-led-L298N---Home-Assistant/blob/main/Diagram RC Camera Car.png" width="350" />
 
-
-
  - Thats It! Have a good time!
-
-<p align="center">
-  <img src="https://github.com/janfajessen/EspHome-RC-FPV-Car-Robot-ve0.1-Esp8266-pantilt-Servo-motors-Camera-USB-led-L298N---Home-Assistant/blob/main/Screenshot_20220411-093548.png" width="250" />
 
 QUESTIONS:
 
