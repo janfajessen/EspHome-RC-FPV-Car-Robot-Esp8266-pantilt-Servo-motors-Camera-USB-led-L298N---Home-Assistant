@@ -43,7 +43,7 @@ https://github.com/ishakmuhamad/rc-car-homeassistant
 MATERIALS:
 
  - Esp8266 nodemcu board
- - Esp32 cam board
+ - Esp32 cam board and for installation FT232RL TTL Serial Converter
  - 12V Battery 6800mah Li-ion Rechargeable Battery with Protection Board and Charger
 https://a.aliexpress.com/_vECinm
  - Arduino Car Kit with 4 TT motors and wheels
@@ -85,7 +85,7 @@ DIAGRAM CONNECTION:
   <img src="https://github.com/janfajessen/EspHome-RC-FPV-Car-Robot-ve0.1-Esp8266-pantilt-Servo-motors-Camera-USB-led-L298N---Home-Assistant/blob/main/Diagram RC Camera Car.png" width="350" />
 
 
-FILE CONFIGURATION:
+FILE CONFIGURATION OR INSTALLATION:
 
  - Plug your esp8266 in your computer or Raspberry Pi. Select new device in EspHome, click continue, write a file name like RC-Car, in Select your device type pick specific board and choose nodemcu.
  - Click skip. Copy and paste in edit button the content of RC-Car.yaml file in your file, change your ssid and WiFi password validate it and install it. 
@@ -110,7 +110,10 @@ FILE CONFIGURATION:
      - Create a Speed Controller using light.speed_control entity with slider 
      - Create a entities card with input_number.servo_x and input_number.servo_y
      - Create a Camera auto Card
- - Plug your esp32cam in your computer or Raspberry Pi. Select new device in EspHome, click continue, write a file name like RC-Car-32cam, in Select your device type choose ESP32.
+
+ - For ESP32Cam installation I have to use a FT232RL TTL to plug in Raspberry Pi. 
+ - Connections: VCC from TTL to 5.5v in ESP32,  GND from TTL to GND in ESP32, RX from TTL to U0T in ESP32, TX from TTL to U0T in ESP32, In ESP32 connect a bridge from IO0 to GND.
+ - Plug your ESP32cam in your computer or Raspberry Pi. Select new device in EspHome, click continue, write a file name like RC-Car-32cam, in Select your device type choose ESP32.
  - Click skip. Copy and paste in edit button the content of RC-Car-32cam.yaml file in your file, change your ssid and WiFi password validate it and install it.
  - Choose Plug into the computer running ESPHome Dashboard and wait the installation.
  - Then other several entities should appears at Home Assistant:
@@ -121,6 +124,8 @@ FILE CONFIGURATION:
      - binary_sensor. rc_car32 cam_status
      - sensor.camara1_wifi_signal_sensor
      - sensor.uptime_sensor
+ - Remove all the wires and connect the ESP32Cam like diagram using only 2 wires, VIN and GND. 
+ - If you want to modify your ESP32Cam file the bridge must be plugged in so you can't OTA installation.
  - Thats It! Have a good time!
 
 <p align="center">
