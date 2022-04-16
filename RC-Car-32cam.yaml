@@ -45,7 +45,7 @@ esp32_camera:
 light:
  - platform: binary 
    output: led
-   name: led_rc_car_camera
+   name: led_rc_car32cam
  
 output:
 - platform: gpio
