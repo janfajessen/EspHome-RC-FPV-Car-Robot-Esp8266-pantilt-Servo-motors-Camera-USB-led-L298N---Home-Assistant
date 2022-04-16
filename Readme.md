@@ -3,9 +3,9 @@
 
  - Control a Camera wherever you want in your House with this RC Car Camera. 
  - You can control away from home like everything in HA.
- - In my case the camera have a lot of lag, must to have patience to move where you want.
- - Can control car speed!!
- - Battery docker station. Can use the camera position also when is charging
+ - Works when it's charging so it's possible to move the camera where you want.
+ - Can control car speed.
+ - Battery docker station.
 
 <p align="center">
   <img src="https://github.com/janfajessen/EspHome-RC-FPV-Car-Robot-ve0.1-Esp8266-pantilt-Servo-motors-Camera-USB-led-L298N---Home-Assistant/blob/main/esphome_logo_logo.png" width="200" />
@@ -26,23 +26,16 @@ I am not an electronics, programming or espHome expert. I have been searching, g
   <img src="https://github.com/janfajessen/EspHome-RC-FPV-Car-Robot-ve0.1-Esp8266-pantilt-Servo-motors-Camera-USB-led-L298N---Home-Assistant/blob/main/rc_car_v_0_1_picture_1.jpg" width="350" />
 
 
-(I've tried it later with an esp32cam but I can't get it to work, I'll put it aside later in the same battery).
+I've tried with only an esp32cam but I can't get it to work, so I put it aside in the same battery.
 
- EVERYTHING IS QUITE PROVISIONAL, I DON'T HAVE IMAGE DIAGRAM YET and has not been assembled yet, when I have all the pieces I will soldering and update this page 
-
-QUESTIONS:
-
- - How to know the battery status?
- - How to connect 2 or more led lights to same pin with transistors and ohms?
-
-You can answer here:
-https://community.home-assistant.io/t/esphome-rc-fpv-car-robot-esp8266-pantilt-servo-motors-camera-usb-led-l298n/410117?u=janinho
+ EVERYTHING IS QUITE PROVISIONAL, and has not been assembled yet, when I have all the pieces I will soldering and update this page 
 
 <p align="center">
   <img src="https://github.com/janfajessen/EspHome-RC-FPV-Car-Robot-ve0.1-Esp8266-pantilt-Servo-motors-Camera-USB-led-L298N---Home-Assistant/blob/main/rc_car_v_0_1_picture_2.jpg" width="350" />
 
 INSPIRATION:
 
+https://www.amazon.es/dp/B06XKC6Q86/ref=cm_sw_r_apan_i_AA99JTHV7PV2H54CWFJE?_encoding=UTF8&psc=1
 https://youtu.be/tyY7AN132Xs
 https://youtu.be/aJeD7R48ZyI
 https://github.com/ishakmuhamad/rc-car-homeassistant
@@ -50,9 +43,8 @@ https://github.com/ishakmuhamad/rc-car-homeassistant
 MATERIALS:
 
  - Esp8266 nodemcu board
- - Eap32 cam board
- - 12V Battery, works when it's charging so it's possible to move the camera. 12V 6800mah 18650 6.8Ah Li-ion Rechargeable Battery with Protection Board 
- - 12.6V Charger
+ - Esp32 cam board
+ - 12V Battery 6800mah Li-ion Rechargeable Battery with Protection Board and Charger
 https://a.aliexpress.com/_vECinm
  - Arduino Car Kit with 4 TT motors and wheels
 https://a.aliexpress.com/_ugpMKk
@@ -122,6 +114,14 @@ FILE CONFIGURATION:
 
 <p align="center">
   <img src="https://github.com/janfajessen/EspHome-RC-FPV-Car-Robot-ve0.1-Esp8266-pantilt-Servo-motors-Camera-USB-led-L298N---Home-Assistant/blob/main/Screenshot_20220411-093548.png" width="250" />
+
+QUESTIONS:
+
+ - How to know the battery status?
+ - How to connect 2 or more led lights to same pin with transistors and ohms?
+
+You can answer here:
+https://community.home-assistant.io/t/esphome-rc-fpv-car-robot-esp8266-pantilt-servo-motors-camera-usb-led-l298n/410117?u=janinho
 
 
 TO DO OR WISHLIST:
