@@ -141,7 +141,7 @@ DIAGRAM CONNECTION:
 
 QUESTIONS:
 
- - How to know the battery status?
+ - How to know the battery status with a sensor?
  - How to connect 2 or more led lights to same pin with transistors and ohms?
 
 You can answer here:
