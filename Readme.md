@@ -85,6 +85,10 @@ https://a.aliexpress.com/_vkivtW
   - Ohms
   - 3d printed case for battery docker station
 
+<p align="center">
+  <img src="https://github.com/janfajessen/EspHome-RC-FPV-Car-Robot-ve0.1-Esp8266-pantilt-Servo-motors-Camera-USB-led-L298N---Home-Assistant/blob/main/Screenshot_20220411-093548.png" width="250" />
+
+
 <a name="item2"></a>
 ### FILE CONFIGURATION OR INSTALLATION:
 
@@ -130,9 +134,6 @@ https://a.aliexpress.com/_vkivtW
      - sensor.uptime_sensor
  - Remove all the wires and connect the ESP32Cam like diagram using only 2 wires, VIN and GND. 
  - If you want to modify your ESP32Cam file the bridge must be plugged in.
-
-<p align="center">
-  <img src="https://github.com/janfajessen/EspHome-RC-FPV-Car-Robot-ve0.1-Esp8266-pantilt-Servo-motors-Camera-USB-led-L298N---Home-Assistant/blob/main/Screenshot_20220411-093548.png" width="250" />
 
  - In your Home Assistant Lovelace or Dashboard:
      - Create a Camera Live Card with your name cameras.
