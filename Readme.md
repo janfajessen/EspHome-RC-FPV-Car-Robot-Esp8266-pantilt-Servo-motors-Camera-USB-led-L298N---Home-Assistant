@@ -49,7 +49,7 @@ https://a.aliexpress.com/_vECinm
  - Arduino Car Kit with 4 TT motors and wheels
 https://a.aliexpress.com/_ugpMKk
  - Servo Pan Tilt it depends on the weight of the camera:
- - Servo PT Pan/Tilt for 2 servo motors sg90 or mg90s 360º, in my case the sg90 sometimes it doesn't have enough strength to move up a Xiaofang Camera
+ - Servo PT Pan/Tilt for 2 servo motors sg90 or mg90s 360º, in my case the sg90 sometimes it doesn't have enough strength to move up a Xiaofang Camera.
 https://a.aliexpress.com/_vaiPQg 
 
 Or
@@ -73,7 +73,7 @@ OPTIONAL:
 
   - Soldering PCB boards
 https://a.aliexpress.com/_vnVAiM
-  - Led lights
+  - Led lights.
 https://a.aliexpress.com/_vkivtW
   - Transistors
   - Ohms
@@ -128,7 +128,7 @@ TO DO OR WISHLIST:
 
 - It con use only a esp32camera without the esp8266 board.
 - Add 1 or 3 more front lights, maybe also 4 backlights using ohms and transistors
-- Fix the way the sensor battery know the correct pins or correct code
+- Fix the way the sensor battery, know the correct pins or correct code
 - 3d printed battery docker station "like a robot vacuum"
 
 
