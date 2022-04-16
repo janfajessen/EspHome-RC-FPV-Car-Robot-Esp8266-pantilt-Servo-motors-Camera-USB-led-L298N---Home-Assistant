@@ -109,7 +109,8 @@ FILE CONFIGURATION:
      - Create a Speed Controller using light.speed_control entity with slider 
      - Create a entities card with input_number.servo_x and input_number.servo_y
      - Create a Camera auto Card
- - Plug your esp32cam in your computer or Raspberry Pi. Select new device in EspHome and choose esp32 board. Give a name like RC-Car-32camera
+ - Plug your esp32cam in your computer or Raspberry Pi. Select new device in EspHome and choose esp32 board. Give a name like RC-Car-32camera.
+ - Copy and paste the RC-Car-32cam.yaml file, change your ssid and WiFi password validate it and upload it.
  - Thats It! Have a good time!
 
 <p align="center">
