@@ -95,7 +95,7 @@ FILE CONFIGURATION OR INSTALLATION:
      - switch.input2
      - switch.input3
      - switch.input4
-     - light.car_speed
+     - light.onoff_and_speed_car
      - light.led_cam
      - service: esphome.rc_car_control_servo_x
      - service: esphome.rc_car_control_servo_y 
@@ -112,10 +112,10 @@ FILE CONFIGURATION OR INSTALLATION:
  - Choose Plug into the computer running ESPHome Dashboard and wait the installation.
  - Then other several entities should appears at Home Assistant:
      - camera.rc_car_32_cam 
-     - light. led_rc_car_camera
+     - light.led_rc_car_camera
      - sensor.camara1_ esphome _version
      - switch.rc_car32cam_restart
-     - binary_sensor. rc_car32 cam_status
+     - binary_sensor.rc_car32 cam_status
      - sensor.camara1_wifi_signal_sensor
      - sensor.uptime_sensor
  - Remove all the wires and connect the ESP32Cam like diagram using only 2 wires, VIN and GND. 
@@ -128,7 +128,7 @@ FILE CONFIGURATION OR INSTALLATION:
      - Create a entities card with input_number.servo_x and input_number.servo_y
      - Create a Camera auto Card
 
- - IMPORTANT: For using the car, the light.speed_control must be ON and more than 75% "brightness". Need more for turn or rotation than forward or backward.
+ - IMPORTANT: For using the car, the light.onoff_and_speed_control must be ON and more than 75% "brightness". Need more for turn or rotation than forward or backward.
 
  - Thats It! Have a good time!
 
