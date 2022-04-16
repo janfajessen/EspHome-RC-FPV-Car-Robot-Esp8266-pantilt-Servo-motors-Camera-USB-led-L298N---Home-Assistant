@@ -79,12 +79,6 @@ https://a.aliexpress.com/_vkivtW
   - Ohms
   - 3d printed case for battery docker station
 
-DIAGRAM CONNECTION:
-
-<p align="center">
-  <img src="https://github.com/janfajessen/EspHome-RC-FPV-Car-Robot-ve0.1-Esp8266-pantilt-Servo-motors-Camera-USB-led-L298N---Home-Assistant/blob/main/Diagram RC Camera Car.png" width="350" />
-
-
 FILE CONFIGURATION OR INSTALLATION:
 
  - Plug your esp8266 in your computer or Raspberry Pi. Select new device in EspHome, click continue, write a file name like RC-Car, in Select your device type pick specific board and choose nodemcu.
@@ -111,24 +105,31 @@ FILE CONFIGURATION OR INSTALLATION:
  - Click skip. Copy and paste in edit button the content of RC-Car-32cam.yaml file in your file, change your ssid and WiFi password validate it and install it.
  - Choose Plug into the computer running ESPHome Dashboard and wait the installation.
  - Then other several entities should appears at Home Assistant:
-     - camera.rc_car_32_cam 
-     - light.led_rc_car_camera
-     - sensor.camara1_ esphome _version
+     - camera.rc_car32_cam 
+     - light.led_rc_car32cam
+     - sensor.rc_car32cam_ esphome_version
      - switch.rc_car32cam_restart
-     - binary_sensor.rc_car32 cam_status
-     - sensor.camara1_wifi_signal_sensor
+     - binary_sensor.rc_car32cam_status
+     - sensor.rc_car32cam_wifi_signal_sensor
      - sensor.uptime_sensor
  - Remove all the wires and connect the ESP32Cam like diagram using only 2 wires, VIN and GND. 
- - If you want to modify your ESP32Cam file the bridge must be plugged in so you can't OTA installation.
+ - If you want to modify your ESP32Cam file the bridge must be plugged in.
 
  - In your Home Assistant Lovelace or Dashboard:
      - Create a Camera Live Card with your ESP32Cam and also the other one.
      - Create a Grid card with all script control buttons (example if you want to paste in code)
-     - Create a Speed Controller using light.speed_control entity with slider 
+     - Create a Speed Controller using light.onoff_and_speed_car entity with slider 
      - Create a entities card with input_number.servo_x and input_number.servo_y
      - Create a Camera auto Card
 
- - IMPORTANT: For using the car, the light.onoff_and_speed_control must be ON and more than 75% "brightness". Need more for turn or rotation than forward or backward.
+ - IMPORTANT: For using the car, the light.onoff_and_speed_car must be ON and more than 75% "brightness". Need more "brightness" for turn or rotation than forward or backward.
+
+DIAGRAM CONNECTION:
+
+<p align="center">
+  <img src="https://github.com/janfajessen/EspHome-RC-FPV-Car-Robot-ve0.1-Esp8266-pantilt-Servo-motors-Camera-USB-led-L298N---Home-Assistant/blob/main/Diagram RC Camera Car.png" width="350" />
+
+
 
  - Thats It! Have a good time!
 
