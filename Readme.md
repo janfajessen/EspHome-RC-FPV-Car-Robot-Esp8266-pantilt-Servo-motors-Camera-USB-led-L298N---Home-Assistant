@@ -41,7 +41,7 @@ INSPIRATION:
   - https://youtu.be/aJeD7R48ZyI
 
 
-MATERIALS:
+### MATERIALS:
 
  - Esp8266 nodemcu board
  - Esp32 cam board and for installation FT232RL TTL Serial Converter
@@ -79,7 +79,7 @@ https://a.aliexpress.com/_vkivtW
   - Ohms
   - 3d printed case for battery docker station
 
-FILE CONFIGURATION OR INSTALLATION:
+### FILE CONFIGURATION OR INSTALLATION:
 
  - Plug your esp8266 in your computer or Raspberry Pi. In EspHome select + new device, click continue, write a file name like RC-Car, in select your device type pick specific board and choose nodemcu.
  - Click skip. Copy and paste in edit button the content of RC-Car.yaml file in your file, change your ssid and WiFi password validate it and install it. 
@@ -128,7 +128,7 @@ FILE CONFIGURATION OR INSTALLATION:
   <img src="https://github.com/janfajessen/EspHome-RC-FPV-Car-Robot-ve0.1-Esp8266-pantilt-Servo-motors-Camera-USB-led-L298N---Home-Assistant/blob/main/Screenshot_20220411-093548.png" width="250" />
 
  - In your Home Assistant Lovelace or Dashboard:
-     - Create a Camera Live Card with your ESP32Cam and also the other one.
+     - Create a Camera Live Card with your name cameras.
      - Create a Grid card with all script control buttons (example if you want to paste in code)
      - Create a Speed Controller using light.onoff_and_speed_car entity with slider 
      - Create a entities card with input_number.servo_x and input_number.servo_y
@@ -136,7 +136,7 @@ FILE CONFIGURATION OR INSTALLATION:
 
  - IMPORTANT: For using the car, the light.onoff_and_speed_car must be ON and more than 75% "brightness". Need more "brightness" for turn or rotation than forward or backward.
 
-DIAGRAM CONNECTION:
+### DIAGRAM CONNECTION:
 
 <p align="center">
   <img src="https://github.com/janfajessen/EspHome-RC-FPV-Car-Robot-ve0.1-Esp8266-pantilt-Servo-motors-Camera-USB-led-L298N---Home-Assistant/blob/main/Diagram RC Camera Car.png" width="450" />
