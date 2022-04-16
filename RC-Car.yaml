@@ -78,7 +78,7 @@ light:
     name: "Leds camera"
     output: leds_cam
   - platform: monochromatic
-    name: "On/Off and Speed Car"
+    name: "OnOff and Speed Car"
     output: pwm_car_speed
 #  - platform: binary
 #    name: "Leds frontales"
