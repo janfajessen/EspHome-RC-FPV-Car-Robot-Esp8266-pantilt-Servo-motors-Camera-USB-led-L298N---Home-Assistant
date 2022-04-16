@@ -85,13 +85,10 @@ https://a.aliexpress.com/_vkivtW
   - Esp32cam
   - 3d printed case for battery docker station
 
-DIAGRAM INSPIRATION: (Not exactly mine)
+DIAGRAM CONNECTION:
 
 <p align="center">
-  <img src="https://github.com/janfajessen/EspHome-RC-FPV-Car-Robot-ve0.1-Esp8266-pantilt-Servo-motors-Camera-USB-led-L298N---Home-Assistant/blob/main/Screenshot_20220407-025208.png" width="350" />
-
-<p align="center">
-  <img src="https://github.com/janfajessen/EspHome-RC-FPV-Car-Robot-ve0.1-Esp8266-pantilt-Servo-motors-Camera-USB-led-L298N---Home-Assistant/blob/main/Screenshot_20220404-093039.png" width="350" />
+  <img src="https://github.com/janfajessen/EspHome-RC-FPV-Car-Robot-ve0.1-Esp8266-pantilt-Servo-motors-Camera-USB-led-L298N---Home-Assistant/blob/main/Diagram RC Camera Car.png" width="350" />
 
 
 FILE CONFIGURATION:
