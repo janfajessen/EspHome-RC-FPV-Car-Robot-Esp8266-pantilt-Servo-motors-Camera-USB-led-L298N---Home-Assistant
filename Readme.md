@@ -63,15 +63,14 @@ Or
 https://a.aliexpress.com/_vYO1g4
  - Dupont Cables
  https://a.aliexpress.com/_vOOCXW
+
+OPTIONAL: 
+
  - USB Voltage Regulator DC-DC Charger or a Portable Battery for the usb camera
 https://a.aliexpress.com/_vLq7TC
  - rtsp USB Camera (Xiaomi Xiaofang in my case) because I want a better image quality and night vision
  - 12.6 Battery indicator
 https://a.aliexpress.com/_vnwGzs
-
- 
-OPTIONAL: 
-
   - Soldering PCB boards
 https://a.aliexpress.com/_vnVAiM
   - Led lights.
