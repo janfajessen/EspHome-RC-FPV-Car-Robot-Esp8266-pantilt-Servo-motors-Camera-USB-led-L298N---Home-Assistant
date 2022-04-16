@@ -104,12 +104,6 @@ FILE CONFIGURATION OR INSTALLATION:
      - input_number.servo_y
  - Once created this input_numbers them copy and paste the content of automations.yaml in your automation.yaml or take it as an example and create it in the UI settings
  - Also copy and paste the content of scripts.yaml into your scripts.yaml file or take it as an example and create it in the UI settings
- - In your Home Assistant Lovelace or Dashboard:
-     - Create a Camera Live Card 
-     - Create a Grid card with all buttons (example if you want to paste in code)
-     - Create a Speed Controller using light.speed_control entity with slider 
-     - Create a entities card with input_number.servo_x and input_number.servo_y
-     - Create a Camera auto Card
 
  - For ESP32Cam installation I have to use a FT232RL TTL to plug in Raspberry Pi. 
  - Connections: VCC from TTL to 5.5v in ESP32,  GND from TTL to GND in ESP32, RX from TTL to U0T in ESP32, TX from TTL to U0T in ESP32, In ESP32 connect a bridge from IO0 to GND.
@@ -126,6 +120,16 @@ FILE CONFIGURATION OR INSTALLATION:
      - sensor.uptime_sensor
  - Remove all the wires and connect the ESP32Cam like diagram using only 2 wires, VIN and GND. 
  - If you want to modify your ESP32Cam file the bridge must be plugged in so you can't OTA installation.
+
+ - In your Home Assistant Lovelace or Dashboard:
+     - Create a Camera Live Card with your ESP32Cam and also the other one.
+     - Create a Grid card with all script control buttons (example if you want to paste in code)
+     - Create a Speed Controller using light.speed_control entity with slider 
+     - Create a entities card with input_number.servo_x and input_number.servo_y
+     - Create a Camera auto Card
+
+ - IMPORTANT: For using the car, the light.speed_control must be ON and more than 75% "brightness". Need more for turn or rotation than forward or backward.
+
  - Thats It! Have a good time!
 
 <p align="center">
