@@ -87,8 +87,8 @@ DIAGRAM CONNECTION:
 
 FILE CONFIGURATION:
 
- - Plug your esp8266 in your computer or Raspberry Pi. Select new device in EspHome and choose nodemcuv2 board. Give a name like RC-Car
- - Copy and paste the RC-Car.yaml file, change your ssid and WiFi password validate it and upload it. 
+ - Plug your esp8266 in your computer or Raspberry Pi. Select new device in EspHome and choose nodemcuv2. Give a name like RC-Car
+ - Copy and paste the content of RC-Car.yaml file in your file, change your ssid and WiFi password validate it and install it. 
  - Then several entities should appears at Home Assistant:
      - switch.input1
      - switch.input2
@@ -109,8 +109,16 @@ FILE CONFIGURATION:
      - Create a Speed Controller using light.speed_control entity with slider 
      - Create a entities card with input_number.servo_x and input_number.servo_y
      - Create a Camera auto Card
- - Plug your esp32cam in your computer or Raspberry Pi. Select new device in EspHome and choose esp32 board. Give a name like RC-Car-32camera.
- - Copy and paste the RC-Car-32cam.yaml file, change your ssid and WiFi password validate it and upload it.
+ - Plug your esp32cam in your computer or Raspberry Pi. Select new device in EspHome and choose esp32dev. Give a name like RC-Car-32cam.
+ - Copy and paste the content of RC-Car-32cam.yaml file in your file, change your ssid and WiFi password validate it and install it.
+ - Then other several entities should appears at Home Assistant:
+     - camera.rc_car_32_cam 
+     - light. led_rc_car_camera
+     - sensor.camara1_ esphome _version
+     - switch.rc_car32cam_restart
+     - binary_sensor. rc_car32 cam_status
+     - sensor.camara1_wifi_signal_sensor
+     - sensor.uptime_sensor
  - Thats It! Have a good time!
 
 <p align="center">
