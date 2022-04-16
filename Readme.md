@@ -1,4 +1,4 @@
-# EspHome RC Car Camera Robot FPV
+# RC Car Camera Robot ESPHome
 ## Version 1.0
 
  - Control a Camera wherever you want in your House with this RC Car Camera. 
