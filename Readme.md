@@ -7,11 +7,17 @@
  - Works when it's charging so it's possible to move the Pan/Tilt camera where you want.
  - Battery docker station.
 
+  * [MATERIALS](#item1)
+  * [FILE CONFIGURATION OR INSTALLATION](#item2)
+  * [DIAGRAM CONNECTION](#item3)
+
+
 <p align="center">
   <img src="https://github.com/janfajessen/EspHome-RC-FPV-Car-Robot-ve0.1-Esp8266-pantilt-Servo-motors-Camera-USB-led-L298N---Home-Assistant/blob/main/esphome_logo_logo.png" width="200" />
 
 <p align="center">
   <img src="https://github.com/janfajessen/EspHome-RC-FPV-Car-Robot-ve0.1-Esp8266-pantilt-Servo-motors-Camera-USB-led-L298N---Home-Assistant/blob/main/ha_logo.png" width="100" height="100" />
+
 
 [![](https://github.com/janfajessen/EspHome-RC-FPV-Car-Robot-ve0.1-Esp8266-pantilt-Servo-motors-Camera-USB-led-L298N---Home-Assistant/blob/main/Screenshot_20220409-140909.png)](https://youtu.be/ULK-bejEP4k)
 
@@ -40,7 +46,7 @@ INSPIRATION:
   - https://youtu.be/tyY7AN132Xs
   - https://youtu.be/aJeD7R48ZyI
 
-
+<a name="item1"></a>
 ### MATERIALS:
 
  - Esp8266 nodemcu board
@@ -79,6 +85,7 @@ https://a.aliexpress.com/_vkivtW
   - Ohms
   - 3d printed case for battery docker station
 
+<a name="item2"></a>
 ### FILE CONFIGURATION OR INSTALLATION:
 
  - Plug your esp8266 in your computer or Raspberry Pi. In EspHome select + new device, click continue, write a file name like RC-Car, in select your device type pick specific board and choose nodemcu.
@@ -136,6 +143,7 @@ https://a.aliexpress.com/_vkivtW
 
  - IMPORTANT: For using the car, the light.onoff_and_speed_car must be ON and more than 75% "brightness". Need more "brightness" for turn or rotation than forward or backward.
 
+<a name="item3"></a>
 ### DIAGRAM CONNECTION:
 
 <p align="center">
