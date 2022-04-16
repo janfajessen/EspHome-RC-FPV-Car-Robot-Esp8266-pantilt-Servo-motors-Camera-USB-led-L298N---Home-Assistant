@@ -49,40 +49,42 @@ https://github.com/ishakmuhamad/rc-car-homeassistant
 
 MATERIALS:
 
- - Esp8266
- - 12V Battery, the esp8266 works when it's charging so it's possible to move the camera. 12V 6800mah 18650 6.8Ah Li-ion Rechargeable Battery With BMS Lithium Battery Packs Protection Board 
- -  12.6V Charger
+ - Esp8266 nodemcu board
+ - Eap32 cam board
+ - 12V Battery, works when it's charging so it's possible to move the camera. 12V 6800mah 18650 6.8Ah Li-ion Rechargeable Battery with Protection Board 
+ - 12.6V Charger
 https://a.aliexpress.com/_vECinm
-- Arduino Car Kit with 4 TT motors and wheels
+ - Arduino Car Kit with 4 TT motors and wheels
 https://a.aliexpress.com/_ugpMKk
-- Servo Pan Tilt it depends on the weight of the camera:
-- Servo PT Pan/Tilt for 2 servo motors sg90, in my case sometimes it doesn't have enough strength to move up a Xiaofang Camera
+ - Servo Pan Tilt it depends on the weight of the camera:
+ - Servo PT Pan/Tilt for 2 servo motors sg90 or mg90s 360º, in my case the sg90 sometimes it doesn't have enough strength to move up a Xiaofang Camera
 https://a.aliexpress.com/_vaiPQg 
 
 Or
--  MG996 Pan/Tilt for 2 servo motors MG996 
+ -  MG996 Pan/Tilt for 2 servo motors MG996 
 https://a.aliexpress.com/_v7d13E
-- 2 servo motors  SG90 360
+ - 2 servo motors  SG90 or Mg90 360º
 
 Or
-- 2 servo motors MG996 360
+ - 2 servo motors MG996 360º
 https://a.aliexpress.com/_vYO1g4
-- Dupont Cable
+ - Dupont Cables
  https://a.aliexpress.com/_vOOCXW
- - Portable Battery for the usb camera
+ - USB Voltage Regulator DC-DC Charger or a Portable Battery for the usb camera
+https://a.aliexpress.com/_vLq7TC
  - rtsp USB Camera (Xiaomi Xiaofang in my case) because I want a better image quality and night vision
+ - 12.6 Battery indicator
+https://a.aliexpress.com/_vnwGzs
 
+ 
 OPTIONAL: 
 
- - Buck Converter for regulate power
- https://a.aliexpress.com/_vMJBkM
   - Soldering PCB boards
 https://a.aliexpress.com/_vnVAiM
   - Led lights
 https://a.aliexpress.com/_vkivtW
   - Transistors
   - Ohms
-  - Esp32cam
   - 3d printed case for battery docker station
 
 DIAGRAM CONNECTION:
@@ -93,8 +95,8 @@ DIAGRAM CONNECTION:
 
 FILE CONFIGURATION:
 
- - I'm not going to say here how to install an esp8266 in Home Assistant, there are many tutorials on YT. 
- - Once the installation is done, copy and paste the RC-Car.yaml file, change your ssid and WiFi password validate it and upload it. 
+ - Plug your esp8266 in your computer or Raspberry Pi. Select new device in EspHome and choose nodemcuv2 board. Give a name like RC-Car
+ - Copy and paste the RC-Car.yaml file, change your ssid and WiFi password validate it and upload it. 
  - Then several entities should appears at Home Assistant:
      - switch.input1
      - switch.input2
@@ -115,6 +117,7 @@ FILE CONFIGURATION:
      - Create a Speed Controller using light.speed_control entity with slider 
      - Create a entities card with input_number.servo_x and input_number.servo_y
      - Create a Camera auto Card
+ - Plug your esp32cam in your computer or Raspberry Pi. Select new device in EspHome and choose esp32 board. Give a name like RC-Car-32camera
  - Thats It! Have a good time!
 
 <p align="center">
@@ -123,11 +126,10 @@ FILE CONFIGURATION:
 
 TO DO OR WISHLIST:
 
-- Add or use only a Esp32cam because the Lag, connected to the same battery or just the esp32 cam like a unique board but without other optionals led lights
+- It con use only a esp32camera without the esp8266 board.
 - Add 1 or 3 more front lights, maybe also 4 backlights using ohms and transistors
 - Fix the way the sensor battery know the correct pins or correct code
-- Add a 3d printed battery docker station "like a robot vacuum"
-- Charge the usb camera with the same battery if it can with everything 
+- 3d printed battery docker station "like a robot vacuum"
 
 
 
