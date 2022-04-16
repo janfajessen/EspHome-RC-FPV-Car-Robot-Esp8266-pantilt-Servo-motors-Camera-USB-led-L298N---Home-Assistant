@@ -35,10 +35,11 @@ I've tried with only an esp32cam but I can't get it to work, so I put it aside i
 
 INSPIRATION:
 
-https://www.amazon.es/dp/B06XKC6Q86/ref=cm_sw_r_apan_i_AA99JTHV7PV2H54CWFJE?_encoding=UTF8&psc=1
-https://youtu.be/tyY7AN132Xs
-https://youtu.be/aJeD7R48ZyI
-https://github.com/ishakmuhamad/rc-car-homeassistant
+  - https://github.com/ishakmuhamad/rc-car-homeassistant
+  - https://www.amazon.es/dp/B06XKC6Q86/ref=cm_sw_r_apan_i_AA99JTHV7PV2H54CWFJE?_encoding=UTF8&psc=1
+  - https://youtu.be/tyY7AN132Xs
+  - https://youtu.be/aJeD7R48ZyI
+
 
 MATERIALS:
 
