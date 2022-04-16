@@ -128,7 +128,7 @@ sensor:
 output:
   - id: leds_cam
     platform: gpio
-    pin: GPIO2
+    pin: GPIO0
   - platform: esp8266_pwm
     pin: GPIO16
     frequency: 1000 Hz
