@@ -4,7 +4,7 @@
  - Control a Camera wherever you want in your House with this RC Car Camera. 
  - Control car speed.
  - Control away from home like everything in HA.
- - Works when it's charging so it's possible to move the camera where you want.
+ - Works when it's charging so it's possible to move the Pan/Tilt camera where you want.
  - Battery docker station.
 
 <p align="center">
