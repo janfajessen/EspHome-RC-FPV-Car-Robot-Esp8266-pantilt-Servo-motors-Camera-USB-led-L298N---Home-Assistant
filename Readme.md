@@ -163,7 +163,7 @@ https://community.home-assistant.io/t/esphome-rc-fpv-car-robot-esp8266-pantilt-s
 
 TO DO OR WISHLIST:
 
-- It con use only a esp32camera without the esp8266 board.
+- It can use only a esp32camera without the esp8266 board.
 - Add 1 or 3 more front lights, maybe also 4 backlights using ohms and transistors
 - Fix the way the sensor battery, know the correct pins or correct code
 - 3d printed battery docker station "like a robot vacuum"
