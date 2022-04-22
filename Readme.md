@@ -51,7 +51,7 @@ INSPIRATION:
 
  - Esp8266 nodemcu board
  - Esp32 cam board and for installation FT232RL TTL Serial Converter
- - 12V Battery 6800mah Li-ion Rechargeable Battery with Protection Board and Charger
+ - 12V Battery 6800mah Li-ion Rechargeable Battery with Protection Board, BMS and Charger
 https://a.aliexpress.com/_vECinm
  - Arduino Car Kit with 4 TT motors and wheels
 https://a.aliexpress.com/_ugpMKk
