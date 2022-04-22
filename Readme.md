@@ -62,10 +62,10 @@ https://a.aliexpress.com/_vaiPQg
 Or
  -  MG996 Pan/Tilt for 2 servo motors MG996 
 https://a.aliexpress.com/_v7d13E
- - 2 servo motors  SG90 or Mg90 360º
+ - 2 servo motors  SG90 or Mg90 180º
 
 Or
- - 2 servo motors MG996 360º
+ - 2 servo motors MG996 180º
 https://a.aliexpress.com/_vYO1g4
  - Dupont Cables
  https://a.aliexpress.com/_vOOCXW
