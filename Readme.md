@@ -148,7 +148,7 @@ https://a.aliexpress.com/_vkivtW
 ### DIAGRAM CONNECTION:
 
 <p align="center">
-  <img src="https://github.com/janfajessen/EspHome-RC-FPV-Car-Robot-ve0.1-Esp8266-pantilt-Servo-motors-Camera-USB-led-L298N---Home-Assistant/blob/main/Diagram RC-CarCamera.png" width="450" />
+  <img src="https://github.com/janfajessen/EspHome-RC-FPV-Car-Robot-ve0.1-Esp8266-pantilt-Servo-motors-Camera-USB-led-L298N---Home-Assistant/blob/main/Diagram RC Car fin.png" width="450" />
 
  - Thats It! Have a good time!
 
