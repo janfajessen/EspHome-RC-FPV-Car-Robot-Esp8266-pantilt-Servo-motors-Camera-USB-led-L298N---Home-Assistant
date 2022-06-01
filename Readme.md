@@ -152,20 +152,10 @@ https://a.aliexpress.com/_vkivtW
 
  - Thats It! Have a good time!
 
-QUESTIONS:
-
- - How to know the battery status with a sensor?
- - How to connect 2 or more led lights to same pin with transistors and ohms?
-
-You can answer here:
-https://community.home-assistant.io/t/esphome-rc-fpv-car-robot-esp8266-pantilt-servo-motors-camera-usb-led-l298n/410117?u=janinho
-
 
 TO DO OR WISHLIST:
 
 - It can use only a esp32camera without the esp8266 board.
-- Add 1 or 3 more front lights, maybe also 4 backlights using ohms and transistors
-- Fix the way the sensor battery, know the correct pins or correct code
 - 3d printed battery docker station "like a robot vacuum"
 
 
