@@ -29,15 +29,8 @@ I am not an electronics, programming or espHome expert. I have been searching, g
 
 
 <p align="center">
-  <img src="https://github.com/janfajessen/EspHome-RC-FPV-Car-Robot-ve0.1-Esp8266-pantilt-Servo-motors-Camera-USB-led-L298N---Home-Assistant/blob/main/rc_car_v_0_1_picture_1.jpg" width="350" />
+  <img src="https://github.com/janfajessen/EspHome-RC-FPV-Car-Robot-ve0.1-Esp8266-pantilt-Servo-motors-Camera-USB-led-L298N---Home-Assistant/blob/main/20220603_134223-ANIMATION.gif" width="350" />
 
-
-I've tried with only an esp32cam but I can't get it to work, so I put it aside in the same battery.
-
- EVERYTHING IS QUITE PROVISIONAL in pictures and has not been assembled yet, when I have all the pieces I will soldering and update this page. The Most important is that it works.
-
-<p align="center">
-  <img src="https://github.com/janfajessen/EspHome-RC-FPV-Car-Robot-ve0.1-Esp8266-pantilt-Servo-motors-Camera-USB-led-L298N---Home-Assistant/blob/main/rc_car_v_0_1_picture_2.jpg" width="350" />
 
 INSPIRATION:
 
