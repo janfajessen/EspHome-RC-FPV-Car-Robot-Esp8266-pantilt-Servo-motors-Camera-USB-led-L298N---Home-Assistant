@@ -28,7 +28,6 @@ wifi:
 
 captive_portal:
 
-#L298N Motor comtroller, all switch at 100% speed:
 switch:
   - platform: gpio
     pin: GPIO15
@@ -46,15 +45,16 @@ switch:
     pin: GPIO13
     name: "input4"
     id: input4
+#  - platform: gpio
+#    pin: 
+#      number: GPIO0
+#      inverted: true
+#    name: "rc 8266 led"
+#    id: ledinput
 
-
-# To control servo motors, must in Home Assistant do a slider (min -100 max 100):
-servo:
-  - id: servo_x
-    output: pwm_output
-  - id: servo_y
-    output: pwm_output2
-    
+#web_server:
+#  port: 80
+  
 api:
   services:
     - service: control_servo_x
@@ -71,68 +71,65 @@ api:
         - servo.write:
             id: servo_y
             level: !lambda 'return level / 100.0;'
-            
-#Optional led lights
+    - service: control_servo_x_2
+      variables:
+        level: float
+      then:
+        - servo.write:
+            id: servo_x2
+            level: !lambda 'return level / 100.0;'
 light:
-  - platform: binary
-    name: "Leds camera"
-    output: leds_cam
   - platform: monochromatic
-    name: "OnOff and Speed Car"
-    output: pwm_car_speed
-#  - platform: binary
-#    name: "Leds frontales"
-#    output: leds_front
-#  - platform: binary
-#    name: "Leds detrás"
-#    output: leds_back
-#  - platform: binary
-#    name: "Led marcha atrás"
-#    output: led_backward
-#  - platform: binary
-#    name: "Leds freno"
-#    output: leds_brake
-#  - platform: binary
-#    name: "Leds intermitente der"
-#    output: leds_turn_right
-#  - platform: binary
-#    name: "Leds intermitente izq"
-#    output: leds_turn_left
+    name: "RC Leds cámara"
+    output: leds_rccam
+# Example speed usage as a light
+  - platform: monochromatic
+    output: pwm_speed_car
+    name: "RC OnOff and Car Speed"
+  - platform: monochromatic
+    name: "RC Leds frontales"
+    output: leds_rcfront
+  - platform: monochromatic
+    name: "RC Leds detrás"
+    output: leds_rcback
+  - platform: monochromatic
+    name: "RC Led marcha atrás"
+    output: led_rcbackward
+ 
 
-#Optional Battery Sensor now it don't work for me, must know the correct code
 sensor:
   - platform: adc
     pin: A0
     id: "LIION"
-    name: "A0 Voltage x 4.2"
-    update_interval: 15s
+    name: "RC adc0 Voltage"
+    update_interval: 10s
     accuracy_decimals: 3
     filters:
-      - multiply: 4.2
-  - platform: template
-    name: "D1003_Battery_Voltage"
-    unit_of_measurement: 'V'
-    update_interval: 15s
-    accuracy_decimals: 2
-    lambda: |-
-      return (id(LIION).state);
-  - platform: template
-    name: "D1003_Battery_Percentage"
-    unit_of_measurement: '%'
-    update_interval: 15s
-    accuracy_decimals: 0
-    lambda: |-
-      return ((id(LIION).state-3) /1.2 * 100.00);
-
-#The id must be the same as output before and here comes the servo, side motors enabled of the L298N to a pin as a light and light jumper wires pins
+      - multiply: 4
+    
+      
 output:
-  - id: leds_cam
-    platform: gpio
+  - id: leds_rccam
+    platform: esp8266_pwm
     pin: GPIO0
+    inverted: true
   - platform: esp8266_pwm
     pin: GPIO16
     frequency: 1000 Hz
     id: pwm_speed_car
+  - platform: esp8266_pwm
+    id: leds_rcfront
+    pin: GPIO1
+    inverted: true
+  - platform: esp8266_pwm
+    id: leds_rcback
+    inverted: true
+    pin: GPIO10
+#GPIO10 pin can't dim light
+  - id: led_rcbackward
+    platform: esp8266_pwm
+    pin: GPIO2
+    inverted: true
   - platform: esp8266_pwm
     id: pwm_output
     pin: GPIO5
@@ -141,78 +138,17 @@ output:
     id: pwm_output2
     pin: GPIO4
     frequency: 50 Hz
+  - platform: esp8266_pwm
+    id: pwm_output3
+    pin: GPIO3
+    frequency: 50 Hz
+#  - platform: esp8266_pwm  # or platform: ledc if is on esp32
 
-#  - id: leds_front
-#    platform: gpio
-#    pin: GPIO15
-#  - id: leds_back
-#    platform: gpio
-#    pin: GPIO10
-#  - id: led_backward
-#    platform: gpio
-#    pin: GPIO9
-#  - id: leds_brake
-#    platform: gpio
-#    pin: GPIO3
-#  - id: leds_turn_right
-#    platform: gpio
-#    pin: GPIO1
-#  - id: leds_turn_left
-#    platform: gpio
-#    pin: GPIO9
 
-#To do in Home assistnt Scripts:
-#  - id: rc_car_forward
-#    then
-#      - switch.turn_off: input1
-#      - switch.turn_off: input3
-#      - delay: 300ms
-#      - switch.turn_on: input2
-#      - switch.turn_on: input4
-
-#  - id: rc_car_backward
-#    then:
-#      - switch.turn_off: input2
-#      - switch.turn_off: input4
-#      - delay: 300ms
-#      - switch.turn_on: input1
-#      - switch.turn_on: input3
-
-#  - id: rc_car_left_rotation
-#    then:
-#      - switch.turn_off: input2
-#      - switch.turn_off: input3
-#      - delay: 300ms
-#      - switch.turn_on: input1
-#      - switch.turn_on: input4
-# or:
-#  - id: rc_car_turn_left
-#    then:
-#      - switch.turn_off: input2
-#      - switch.turn_off: input3
-#      - switch.turn_off: input1
-#      - delay: 300ms
-#      - switch.turn_on: input4
-
-#  - id: rc_car_right_rotation
-#    then:
-#      - switch.turn_off: input1
-#      - switch.turn_off: input4 
-#      - delay: 300ms
-#      - switch.turn_on: input3
-#      - switch.turn_on: input2
-# or:
-#  - id: rc_car_turn_right
-#    then:
-#      - switch.turn_off: input4
-#      - switch.turn_off: input3
-#      - switch.turn_off: input1
-#      - delay: 300ms
-#      - switch.turn_on: input2
-
-#  - id: rc_car_stop
-#    then:
-#      - switch.turn_off: input1
-#      - switch.turn_off: input2
-#      - switch.turn_off: input3
-#      - switch.turn_off: input4
+servo:
+  - id: servo_x
+    output: pwm_output
+  - id: servo_y
+    output: pwm_output2
+  - id: servo_x2
+    output: pwm_output3
